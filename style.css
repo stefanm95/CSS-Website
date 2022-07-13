@@ -180,6 +180,7 @@ a:active {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
+  justify-content: center;
 }
 .box1 {
   margin: 150px 170px 125px 170px;
@@ -187,18 +188,18 @@ a:active {
   background-color: #e5e7eb;
   font-size: 36px;
   font-family: 'Roboto', sans-serif;
-  flex-basis: 400px;
+  flex: 2 2 400px;
+  display: flex;
 }
 .box1 p {
   font-family: 'Roboto5', sans-serif;
   color: #1f2937;
   font-size: 36px;
-  flex: 2;
-  margin: 135px 200px 70px 200px;
+  margin: 135px 240px 70px 240px;
+  padding: 15px 20px 30px 20px;
 }
 .box1 a {
-  margin-left: 750px;
-  justify-items: space-between;
+  margin-left: 250px;
 }
 .box2 {
   margin-left: 450px;
