@@ -34,6 +34,7 @@ a:active {
   text-decoration: none;
 }
 .wrapper .main-global {
+  margin: -10px;
   display: flex;
   flex-direction: column;
 }
@@ -101,7 +102,7 @@ a:active {
   margin-left: 300px;
   align-items: left;
   line-height: 1;
-  flex: 1 1 300px;
+  flex: 2 1 300px;
 }
 .hero-2 {
   margin-top: 125px;
@@ -109,14 +110,14 @@ a:active {
   background-color: #b2b3b6b9;
   height: 270px;
   width: 350px;
-  flex: 3 1 300px;
+  flex: 2 1 300px;
   align-items: center;
-  margin-right: 300px;
+  margin-right: 500px;
   margin-left: 240px;
   display: flex;
 }
-.hero-2 p {
-  width: 400px;
+.hero-2 img {
+  width: 800px;
   text-align: right;
   justify-content: center;
 }
