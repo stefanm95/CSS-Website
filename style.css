@@ -33,6 +33,10 @@ a:hover {
 a:active {
   text-decoration: none;
 }
+.wrapper .main-global {
+  display: flex;
+  flex-direction: column;
+}
 /*first section*/
 .firstContainer {
   max-width: 100%;
@@ -62,6 +66,7 @@ a:active {
   display: flex;
   align-items: flex-start;
   justify-content: space-around;
+  flex: 1;
 }
 /*second section*/
 .main-hero {
@@ -83,9 +88,12 @@ a:active {
   height: 20px;
 }
 .secondContainer {
-  display: flex;
   color: white;
   background-color: #1f2937;
+}
+.main-global .secondContainer {
+  flex: 2;
+  display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
 }
@@ -149,7 +157,8 @@ a:active {
   border: 2.5px solid #3882f6;
   border-radius: 10px;
 }
-.thirdContainer {
+.main-global .thirdContainer {
+  flex: 2;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -171,7 +180,8 @@ a:active {
   justify-items: center;
 }
 /*forth section*/
-.forthContainer {
+.main-global .forthContainer {
+  flex: 2;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -196,51 +206,50 @@ a:active {
   justify-items: space-between;
 }
 .box2 {
-  display: flex;
-  flex-basis: 150px;
-  flex: 1;
-  max-width: 100%;
-  margin: 20px 325px 40px 325px;
+  margin-left: 450px;
+  margin-right: 450px;
   background-color: #3882f6;
   border-radius: 7px;
   color: white;
+  display: flex;
+  flex-basis: 120px;
+  /* justify-content: center; */
+  justify-content: space-around;
+  /* width: 600px; */
 }
 .box2 button {
-  margin-left: 270px;
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin-top: 35px;
   color: white;
   background-color: #3882f6;
-  border-width: 2.5px;
+  border-width: 1.5px;
   border-radius: 10px;
   border-color: white;
-  align-items: center;
-  font-size: 17px;
+  font-size: 14px;
   font-weight: 500;
-  font-family: 'Roboto1', sans-serif;
-  width: 110px;
-  height: 20px;
+  font-family: 'Roboto4', sans-serif;
+  width: 130px;
+  height: 7px;
+  letter-spacing: 0.8px;
 }
 .box2 h1 {
-  margin-left: 250px;
-  margin-top: 50px;
   font-family: 'Roboto4', sans-serif;
   font-weight: 900;
   line-height: 0.2;
 }
-.box2 h2 {
-  margin-left: 250px;
-  margin-top: 25px;
+.box2 p {
   font-family: 'Roboto3', sans-serif;
   line-height: 0.2;
-  font-size: smaller;
+}
+.box2h {
+  margin-top: 25px;
+  margin-left: 20px;
 }
 /*fifth section*/
 .main-footer {
   margin-top: 50px;
   background-color: #1f2937;
 }
-.fifthContainer {
+.main-footer .fifthContainer {
   display: flex;
   flex-direction: column;
 }
@@ -251,8 +260,4 @@ a:active {
   text-align: center;
   height: 50px;
   justify-items: center;
-}
-.wrapper .main-global {
-  display: flex;
-  flex-direction: column;
 }
