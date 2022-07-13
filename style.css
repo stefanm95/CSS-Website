@@ -66,12 +66,6 @@ a:active {
 /*second section*/
 .main-hero {
   background-color: #1f2937;
-  height: 60vh;
-}
-.heroimg {
-  width: 400px;
-  height: auto;
-  text-align: right;
 }
 .btn {
   color: #f9faf8;
@@ -96,11 +90,10 @@ a:active {
   flex-wrap: wrap;
 }
 .hero-1 {
-  justify-content: space-around;
-  margin-top: 100px;
-  margin-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   margin-left: 300px;
-  max-width: 100%;
   align-items: left;
   line-height: 1;
   flex: 1 1 300px;
@@ -109,13 +102,18 @@ a:active {
   margin-top: 125px;
   margin-bottom: 100px;
   background-color: #b2b3b6b9;
-  display: flex;
   height: 270px;
   width: 350px;
-  flex: 1.5 1.5 300px;
+  flex: 3 1 300px;
   align-items: center;
   margin-right: 300px;
   margin-left: 240px;
+  display: flex;
+}
+.hero-2 p {
+  width: 400px;
+  text-align: right;
+  justify-content: center;
 }
 .main-hero h1 {
   font-size: 48px;
@@ -134,6 +132,8 @@ a:active {
 }
 /*third section code*/
 .title {
+  margin: 100px;
+  margin-bottom: 20px;
   font-family: 'Roboto4', sans-serif;
   text-align: center;
   font-size: 36px;
@@ -142,9 +142,8 @@ a:active {
 }
 .box {
   color: white;
-  text-align: center;
+  width: 100px;
   height: 100px;
-  flex-basis: 110px;
   background-color: white;
   margin: 15px;
   border: 2.5px solid #3882f6;
@@ -152,17 +151,24 @@ a:active {
 }
 .thirdContainer {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+}
+.boxContainer {
+  display: flex;
+}
+.box {
+  flex: 1;
 }
 .thirdContainer p {
+  display: flex;
   font-size: small;
   font-family: 'Roboto3', sans-serif;
   margin-top: 108px;
-  margin-right: -25px;
   color: #1f2937;
-  text-align: left;
   text-align-last: center;
-  padding-right: 15px;
+  justify-items: center;
 }
 /*forth section*/
 .forthContainer {
@@ -171,36 +177,33 @@ a:active {
   flex-direction: column;
 }
 .box1 {
-  margin: 125px;
-  justify-content: center;
-  margin-left: 150px;
-  margin-right: 150px;
-  height: 45vh;
+  margin: 150px 170px 125px 170px;
   max-width: 100%;
   background-color: #e5e7eb;
   font-size: 36px;
   font-family: 'Roboto', sans-serif;
+  flex-basis: 400px;
+}
+.box1 p {
+  font-family: 'Roboto5', sans-serif;
+  color: #1f2937;
+  font-size: 36px;
+  flex: 2;
+  margin: 135px 200px 70px 200px;
+}
+.box1 a {
+  margin-left: 750px;
+  justify-items: space-between;
 }
 .box2 {
   display: flex;
   flex-basis: 150px;
   flex: 1;
   max-width: 100%;
-  display: flex;
   margin: 20px 325px 40px 325px;
   background-color: #3882f6;
   border-radius: 7px;
   color: white;
-}
-.box1 p {
-  font-family: 'Roboto5', sans-serif;
-  color: #1f2937;
-  font-size: 36px;
-  margin: 135px 210px 70px 230px;
-  text-align: left;
-}
-.box1 a {
-  margin-left: 700px;
 }
 .box2 button {
   margin-left: 270px;
@@ -247,32 +250,9 @@ a:active {
   color: white;
   text-align: center;
   height: 50px;
-  justify-content: center;
+  justify-items: center;
 }
 .wrapper .main-global {
   display: flex;
   flex-direction: column;
-}
-
-.wrapper .firstContainer {
-  flex-basis: 100%;
-  margin-top: -7px;
-  flex: 2;
-}
-.wrapper .fifthContainer {
-  flex-basis: 100%;
-  margin-bottom: -7px;
-  flex: 1;
-}
-.wrapper .secondContainer {
-  flex-basis: 50%;
-  flex: 1;
-}
-.wrapper .thirdContainer {
-  flex-basis: 70%;
-  flex: 1.5;
-}
-.wrapper .forthContainer {
-  flex-basis: 30%;
-  flex: 0.5;
 }
