@@ -108,7 +108,6 @@ a:active {
   margin-top: 125px;
   margin-bottom: 100px;
   background-color: #b2b3b6b9;
-  height: 270px;
   width: 350px;
   flex: 2 1 300px;
   align-items: center;
@@ -118,8 +117,6 @@ a:active {
 }
 .hero-2 img {
   width: 800px;
-  text-align: right;
-  justify-content: center;
 }
 .main-hero h1 {
   font-size: 48px;
